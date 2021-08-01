@@ -1,0 +1,9 @@
+#!/bin/bash
+
+nvidia-settings -a "DigitalVibrance=${1:-0}"
+
+# Documentation:
+#   "$1" is the first command line argument.
+#   "${1}" is a different way to write "$1".
+#   That ":-200" thing sets a default value 200 for when $1 is empty.
+
